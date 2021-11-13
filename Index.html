@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamburger</title>
+    <link rel="stylesheet" href="stilee.css">
+</head>
+<body>
+     
+     <div class="menu-btn">
+       <div class="menu-btn_burguer"></div>
+     </div>
+     <script>
+       const menuBtn = document.querySelector('.menu-btn');
+      
+       let menuOpen = false;
+       menuBtn.addEventListener('click', () => { 
+        if (!menuOpen) {
+           menuBtn.classList.add('open');
+           menuOpen = true;
+        } else {
+           menuBtn.classList.remove('open');
+           menuOpen = false;
+        }
+       });
+       
+     
+     </script>
+</body>
+</html>
